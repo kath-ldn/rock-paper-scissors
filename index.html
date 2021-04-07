@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/rock.png"/>
+    <meta name="description" content="Rock, Paper, Scissors">
+    <meta name="author" content="Kath">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Rock, Paper, Scissors!</h1>
+    <h2>Play 5 rounds - can you beat the computer?</h2>
+    <main>
+        <div id="play-game-button" class="hover"> Click me to start a new game!</div>
+        <div class="game-container" id="game">
+            <div class="icon" id="rock-icon"></div>
+            <div class="icon" id="paper-icon"></div>
+            <div class="icon" id="scissors-icon"></div>
+        </div>
+        <div class="message-wrapper">
+            <div id="message-board" class="typing-animation"></div>
+        </div>
+        <div class="container" id="scoreboard">
+            <div class="score-text">Your Score:
+                <div id="user-score" class="scores"></div>
+            </div>
+            <div class="score-text">Computer score:
+                <div id="computer-score" class="scores"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script> 
+</body>
+</html>

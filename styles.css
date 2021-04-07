@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    height: fit-content;
+    color: #2B2B2B;
+}
+
+h1{
+    font-size: 8vh;
+    padding: 5vh 0 3vh 0;
+}
+
+h2{
+    padding: 0 0 4vh 0;
+    color:#858585;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#play-game-button{
+    padding: 2vh 0 6vh 0;
+    font-weight: 400;
+    transition: ease-out 0.2s;
+}
+
+.hover#play-game-button:hover{
+    cursor: pointer;
+    color: rgb(102, 153, 255);
+    font-weight: 600;
+}
+
+.selected{
+    transition: ease-out 0.2s;
+    color:#afafaf;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-between;
+    height: 153px;
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+}
+
+.icon:hover{
+    width: 152px;
+    height: 152px;
+    transition: ease-out 0.2s;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#rock-icon{
+    background-image: url(./assets/rock.png);
+    background-size: cover;
+}
+
+#paper-icon{
+    background-image: url(./assets/paper.png);
+    background-size: cover;
+}
+
+#scissors-icon{
+    background: url(./assets/scissors.png) no-repeat;
+    background-size: 95%;
+    background-position: center;
+}
+
+.message-wrapper{
+    height: 20vh;
+}
+
+#message-board{
+    overflow: hidden;
+    border-right: 1px solid #2B2B2B;
+    white-space: nowrap;
+    width: fit-content;
+    margin: 10vh auto;
+    letter-spacing: .15em;
+    transition: ease-out 0.2s;
+    height: 20px;
+}
+
+.typing-animation{
+        animation: 
+        typing 2.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    20% { border-color: #2B2B2B; }
+}
+
+#scoreboard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.score-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scores{
+    padding-top: 1em;
+    font-size: 26px;
+    font-weight: 500;
+}
